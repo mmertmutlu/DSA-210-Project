@@ -8,9 +8,9 @@ As an university student, life during exam weeks makes us feel fatigue and inact
 I will allocate daily step count and calorie data from the Health application on my iPhone. Addition to that, I will provide a detailed exam calendar for the analysis.
 ### Data Processing:
 The data will be set apart into two categories: Exam Week and Regular Time. Steps and calorie data during exam weeks will be isolated for comparison with the rest of the dataset.
-### Analyzing by Python language
+### Analyzing by Python language:
 Exploratory Data Analysis (EDA) will be conducted to identify patterns and trends. Statistical methods and visualizations will be used to compare physical activity and calorie expenditure between the two periods.
-### Visualization
+### Visualization:
 Time-series plots, bar charts, and comparative visuals will be used to outline differences and draw comprehensive conclusions.
 
 ## Expected Output
