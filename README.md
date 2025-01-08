@@ -34,8 +34,7 @@ Data provided by Apple is an export zip file including xml files of data. First,
 When examining the distribution of step counts,I observed a left-shifted, right-tailed skewness resembling a normal distribution. To remove outliers from the data, I used boxplotting to identify outliers in the daily step count data. I replaced the outliers with the nearest boundaries within the dataset. Then, I performed boxplotting again to obtain the cleaned version of the data, free from outliers.
 
 ![image](https://github.com/user-attachments/assets/1853e09c-207e-421b-b38c-718974c73212)
-                     ![image](https://github.com/user-attachments/assets/0863129b-27f9-4b3a-a386-9fb4ed267aa9)
-
+                    
 To explore the data more periodically, I analyzed its weekly, monthly, and yearly trends. I continued the analysis using bar charts, as they made the data easier to interpret.
 
 First, I looked at the average step counts for each day of the week.
