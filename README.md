@@ -84,7 +84,7 @@ To demonstrate the relationship between step counts and weather or precipitation
 ![image](https://github.com/user-attachments/assets/beb085f3-3f46-4a70-b683-480b8c008415)
 
 
-## Conclusion and Machine Learning Concepts
+## Machine Learning Concepts
 Last but not least, I try to train with some machine learning concepts. As a ML I assign a NAIVE BAYES Classifier to predict whether the step count for the day is "healthy" (above or equal to 10,000) and how this variable relates to the data for in the exam period.
 
 More formally, the purpose is to find probabilities:
@@ -100,6 +100,11 @@ Clearly there is no significant linear correlation between these variables. Furt
 
 
 I define the structure of the Bayesian Network and utilize Maximum Likelihood Estimation to learn the Conditional Probability Distributions (CPDs). An inference object is created to facilitate querying probabilities. 
+
+![image](https://github.com/user-attachments/assets/c5dfa3a6-fa5b-48d6-90ee-d25ff592bb05)
+
+
+
 
 
 
