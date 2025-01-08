@@ -5,15 +5,23 @@ As an university student, life during exam weeks makes us feel fatigue and inact
 
 ## Expected Output
 A clear and compelling comparison of physical activity and calorie expenditure during exam weeks versus regular days. Statistics to validate the hypothesis that physical activity decreases during exam periods. Insightful visualizations that represents the findings effectively and clearly.
+To eliminate the weather effects, I also analyze weather conditions and precipitation levels to ensure that the reason for being inactive during exam periods is not influenced by weather-related factors.
 
-## Null Hypothesis
+## Hypotheses:
+### Null Hypothesis
+Regardless of weather conditions or precipitation, my step count and calorie expenditure do not change during exam periods compared to non-exam periods.
+
+### Alternative Hypothesis
 Regardless of weather conditions or precipitation, my step count and calorie expenditure significantly decrease during exam periods compared to non-exam periods.
 
 ## Methods and Implementation
 ### Data Collection:
-I allocate the daily step count and calorie data from the Health application on my iPhone for the past three years since I started university. Addition to that, I provide a detailed exam calendar for the analysis.
-####
-Determined exam periods: [29 May - 11 June 2023 , 6 January - 19 January 2024 , 28 May - 9 June 2024 , 5 November - 12 November 2024 , 30 December 2024 - 13 January 2025] 
+I allocate the daily step count and calorie data from the Health application on my iPhone for the past three years since I started university. Apple provides a zip file including everything which correlates with Health application. 
+#### Determined a detailed exam periods:
+[29 May - 11 June 2023 , 6 January - 19 January 2024 , 28 May - 9 June 2024 , 5 November - 12 November 2024 , 30 December 2024 - 13 January 2025] 
+
+### Data Processing and Analyzing by Python language:
+Exploratory Data Analysis (EDA) will be conducted to identify patterns and trends. Statistical methods and visualizations will be used to compare physical activity and calorie expenditure between the two periods.
 
 Data provided by Apple is an export zip file including xml files of data. First, I extract only the relevant data, namely calorie expenditure and step count, from the XML files by manipulating it into daily, weekly, and monthly formats. In order to start analysis by drawing the outlayers and stating the huge picture ,I need to aggregate step_counts for each day rather than keeping the timestamps.
 
@@ -63,17 +71,45 @@ Subsequently I transition data to boxplotting and violin plotting, as I believed
 
 The clear differences observed in the box plot make me feel closer to validating my hypothesis. During non-exam periods, the scale of step counts is noticeably higher, and the average is significantly elevated compared to exam periods.
 
+I augmented the dataset with weather data to control for external factors might be caused by weather. Using an API, I extracted and processed data for the Istanbul region, including average temperature and precipitation levels, to establish a correlation with the non-exam period. 
+
+![image](https://github.com/user-attachments/assets/8d5ba080-1a61-4dc4-946d-e40326b7b431)
+
+The average temperature data is distributed in a pattern resembling a bimodal normal distribution. On the other hand, the precipitation levels typically remain below 10 mm, as observed during the analysis.
+
+To demonstrate the relationship between step counts and weather or precipitation, I utilize scatter plots. I separate the data into exam periods and non-exam periods and identify, observe the overlapping cases.
+
+![image](https://github.com/user-attachments/assets/904ff85b-3650-473d-828a-acf29fb41dff)
+
+![image](https://github.com/user-attachments/assets/beb085f3-3f46-4a70-b683-480b8c008415)
+
+
+## Conclusion and Machine Learning Concepts
+Last but not least, I try to train with some machine learning concepts. As a ML I assign a NAIVE BAYES Classifier to predict whether the step count for the day is "healthy" (above or equal to 10,000) and how this variable relates to the data for in the exam period.
+
+More formally, the purpose is to find probabilities:
+P(healthy|is_in_exam_period)P(healthy|¬is_in_exam_period)
+
+First, the Gaussian hypothesis should be verified, that is that these variables are independent.
+
+from sklearn.feature_selection import mutual_info_classif
+
+correlation = df_with_weather['is_in_exam_period'].corr(df_with_weather['healthy'])
+print(f"Correlation: {correlation * 100:.2f}%")
+
+X = df_with_weather[['is_in_exam_period']]
+y = df_with_weather['healthy']
+mi_score = mutual_info_classif(X, y)
+print(f"Mutual Information Score: {mi_score[0]:.5f}")
+
+Correlation: -6.35%
+Mutual Information Score: 0.00000
+Clearly there is no significant linear correlation between these variables. Furthermore, the mutual information score close to 0 suggests that these variables are independent. Thus the Gaussian hypothesis is true in this case.
 
 
 
 
 
-
-
-### Data Processing:
-The data will be set apart into two categories: Exam Week and Regular Time. Steps and calorie data during exam weeks will be isolated for comparison with the rest of the dataset.
-### Analyzing by Python language:
-Exploratory Data Analysis (EDA) will be conducted to identify patterns and trends. Statistical methods and visualizations will be used to compare physical activity and calorie expenditure between the two periods.
 ### Visualization:
 Time-series plots, bar charts, and comparative visuals will be used to outline differences and draw comprehensive conclusions.
 
