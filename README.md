@@ -4,7 +4,7 @@
 As an university student, life during exam weeks makes us feel fatigue and inactive with long hours of studying and limited time for physical activity. In this project we aim to explore whether my daily step count and calorie expenditure are significantly impacted during exam periods compared to regular days. By analyzing this data, we hope to gain insights into how exams influence my physical mobility and identify ways to better balance academics and well-being activities. 
 
 ## Expected Output
-A clear and compelling comparison of physical activity and calorie expenditure during exam weeks versus regular days. Statistics to validate the hypothesis that physical activity decreases during exam periods. Insightful visualizations that represents the findings effectively and clearly.
+A clear and compelling comparison of physical activity and calorie expenditure during exam weeks versus regular days. Statistics to validate the main purpose of the project that physical activity decreases during exam periods. Insightful visualizations that represents the findings effectively and clearly.
 To eliminate the weather effects, I also analyze weather conditions and precipitation levels to ensure that the reason for being inactive during exam periods is not influenced by weather-related factors.
 
 ## Hypotheses:
@@ -19,6 +19,9 @@ Regardless of weather conditions or precipitation, my step count and calorie exp
 I allocate the daily step count and calorie data from the Health application on my iPhone for the past three years since I started university. Apple provides a zip file including everything which correlates with Health application. 
 #### Determined a detailed exam periods:
 [29 May - 11 June 2023 , 6 January - 19 January 2024 , 28 May - 9 June 2024 , 5 November - 12 November 2024 , 30 December 2024 - 13 January 2025] 
+
+### Visualization:
+Time-series plots, bar charts, box-plotting, violin-plotting, scattered-plotting, histograms and comparative visuals are used to outline differences and draw comprehensive conclusions.
 
 ### Data Processing and Analyzing by Python language:
 Exploratory Data Analysis (EDA) will be conducted to identify patterns and trends. Statistical methods and visualizations will be used to compare physical activity and calorie expenditure between the two periods.
@@ -105,16 +108,16 @@ I define the structure of the Bayesian Network and utilize Maximum Likelihood Es
 
 
 
+## Conclusion
 
 
 
 
 
 
-### Visualization:
-Time-series plots, bar charts, and comparative visuals will be used to outline differences and draw comprehensive conclusions.
 
 
-## Data Allocation
-Steps and Calories: Daily step count and calorie data sourced from the Health application on my personal iPhone.
-Exam Calendar: A detailed schedule of exam dates to identify and mark the exam weeks in the dataset.
+
+
+
+
