@@ -68,7 +68,7 @@ It is time to analyze the data by categorizing it into exam periods and non-exam
 
 However, this approach is somewhat confusing for interpretation.
 
-Subsequently I transition data to boxplotting and violin plotting, as I believed these methods would better highlight the differences. Using these two methods, the variations in step counts between exam periods and non-exam periods become much more accurated and differentiable.
+Subsequently I convert data to boxplotting and violin plotting, as I believed these methods would better highlight the differences. Using these two methods, the variations in step counts between exam periods and non-exam periods become much more accurated and differentiable.
 
 ![image](https://github.com/user-attachments/assets/7561ade2-3867-49cc-a4e4-6a009c23e20f)
 
