@@ -7,11 +7,11 @@ As an university student, life during exam weeks makes us feel fatigue and inact
 A clear and compelling comparison of physical activity and calorie expenditure during exam weeks versus regular days. Statistics to validate the main purpose of the project that physical activity decreases during exam periods. Insightful visualizations that represents the findings effectively and clearly.
 To eliminate the weather effects, I also analyze weather conditions and precipitation levels to ensure that the reason for being inactive during exam periods is not influenced by weather-related factors.
 
-## Hypotheses:
-### Null Hypothesis
+## Hypotheses
+### Null Hypothesis:
 Regardless of weather conditions or precipitation, my step count and calorie expenditure do not change during exam periods compared to non-exam periods.
 
-### Alternative Hypothesis
+### Alternative Hypothesis:
 Regardless of weather conditions or precipitation, my step count and calorie expenditure significantly decrease during exam periods compared to non-exam periods.
 
 ## Methods and Implementation
@@ -93,7 +93,7 @@ Last but not least, I try to train with some machine learning concepts. As a ML 
 
 In this project, I leveraged tools from the pgmpy library to model and analyze the relationship between exam periods/non exam periods and step counts:
 
-### Used Models from pgmpy library
+### Used Models from pgmpy library:
 
 Bayesian Network: Defined a probabilistic graphical model to represent dependencies between ExamPeriod and Healthy.
 Maximum Likelihood Estimation: Learned the Conditional Probability Distributions (CPDs) from the dataset, ensuring the model accurately reflected the observed data.
@@ -119,9 +119,17 @@ I define the structure of the Bayesian Network and utilize Maximum Likelihood Es
 
 
 
-## Conclusion
+## Conclusion and Findings
 
+In this project, the threshold for determining the transition between being active and inactive was set at 10,000 steps. Following the analysis, it became evident that the likelihood of achieving a healthy step count (above 10,000 steps) increases by approximately 2% during non-exam weeks compared to exam weeks. As a result, the null hypothesis is rejected, and our expected hypothesis is validated.
 
+The analysis clearly demonstrates the extent to which school, and particularly exam periods, impacts my physical activity levels. It highlights the challenges in maintaining a calorie deficit during these times, as reflected by the noticeable drop in my step counts. This project provides valuable insights into how academic demands influence daily physical activity.
+
+## Limitations and Future Work
+
+While conducting this project, I tried to eliminate external factors as much as possible; however, there are undoubtedly other side or external factors beyond weather that could influence my step count. Their inconsistency and the lack of sufficient data prevented me from including them in the analysis. I could have deepened my analysis by leveraging additional machine learning concepts. However, after validating my data—which I had isolated from external influences—using the reliable Naive Bayes method, I found no need to employ another machine learning tool within the limited timeframe of this project.
+
+Through this project, I have become much more aware of the inactivity problem I have always approached with suspicion but never taken seriously during exam periods. To protect both my mental and physical health, as well as my self-confidence, I am determined to make a special effort to maintain my step count above an average of 10,000. I have also decided to start scheduling my study and project workloads well in advance of exam periods. This way, I will ensure that I do not succumb to the intensity and compromise my physical activities under any circumstances
 
 
 
