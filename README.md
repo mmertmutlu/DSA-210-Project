@@ -96,7 +96,9 @@ In this project, I leveraged tools from the pgmpy library to model and analyze t
 ### Used Models from pgmpy library:
 
 Bayesian Network: Defined a probabilistic graphical model to represent dependencies between ExamPeriod and Healthy.
+
 Maximum Likelihood Estimation: Learned the Conditional Probability Distributions (CPDs) from the dataset, ensuring the model accurately reflected the observed data.
+
 Variable Elimination: Used this inference method to calculate the probabilities of achieving a healthy step count during exam and non-exam periods.
 
 This approach provided a clear and systematic way to analyze how exam periods affect physical activity levels, confirming the hypothesis that step counts tend to decrease during exam weeks.
