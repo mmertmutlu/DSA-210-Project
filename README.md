@@ -92,19 +92,15 @@ P(healthy|is_in_exam_period)P(healthy|¬is_in_exam_period)
 
 First, the Gaussian hypothesis should be verified, that is that these variables are independent.
 
-from sklearn.feature_selection import mutual_info_classif
+![image](https://github.com/user-attachments/assets/0c52929d-58db-4a30-9add-b993fc77578a)
 
-correlation = df_with_weather['is_in_exam_period'].corr(df_with_weather['healthy'])
-print(f"Correlation: {correlation * 100:.2f}%")
 
-X = df_with_weather[['is_in_exam_period']]
-y = df_with_weather['healthy']
-mi_score = mutual_info_classif(X, y)
-print(f"Mutual Information Score: {mi_score[0]:.5f}")
-
-Correlation: -6.35%
-Mutual Information Score: 0.00000
 Clearly there is no significant linear correlation between these variables. Furthermore, the mutual information score close to 0 suggests that these variables are independent. Thus the Gaussian hypothesis is true in this case.
+
+
+
+I define the structure of the Bayesian Network and utilize Maximum Likelihood Estimation to learn the Conditional Probability Distributions (CPDs). An inference object is created to facilitate querying probabilities. 
+
 
 
 
