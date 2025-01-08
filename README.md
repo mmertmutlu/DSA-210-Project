@@ -1,7 +1,7 @@
 # Impact of the Exam Weeks on Regular Physical Activity and Calories Burned
 
 ## Motivation and Aim
-As an university student, life during exam weeks makes us feel fatigue and inactive with long hours of studying and limited time for physical activity. In this project we aim to explore whether my daily step count and calorie expenditure are significantly impacted during exam periods compared to regular days. By analyzing this data, we hope to gain insights into how exams influence my physical mobility and identify ways to better balance academics and well-being activities. 
+As an university student, life during exam weeks makes us feel fatigue and inactive with long hours of studying and limited time for physical activity. However we try our best to take care of our health and stay active even during these intense periods. The motivation is to conduct an analysis to understand how successful we have been in achieving this. In this project's scope we aim to explore whether my daily step count and calorie expenditure are significantly impacted during exam periods compared to regular days. By analyzing this data, we hope to gain insights into how exams influence my physical mobility and identify ways to better balance academics and well-being activities. 
 
 ## Expected Output
 A clear and compelling comparison of physical activity and calorie expenditure during exam weeks versus regular days. Statistics to validate the main purpose of the project that physical activity decreases during exam periods. Insightful visualizations that represents the findings effectively and clearly.
@@ -18,6 +18,7 @@ Regardless of weather conditions or precipitation, my step count and calorie exp
 ### Data Collection:
 I allocate the daily step count and calorie data from the Health application on my iPhone for the past three years since I started university. Apple provides a zip file including everything which correlates with Health application. 
 #### Determined a detailed exam periods:
+Exam periods: 5 days before final week starts through end of the last final exam date. Midterms are not calculated.
 [29 May - 11 June 2023 , 6 January - 19 January 2024 , 28 May - 9 June 2024 , 5 November - 12 November 2024 , 30 December 2024 - 13 January 2025] 
 
 ### Visualization:
