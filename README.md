@@ -3,6 +3,9 @@
 ## Motivation and Aim
 As an university student, life during exam weeks makes us feel fatigue and inactive with long hours of studying and limited time for physical activity. In this project we aim to explore whether my daily step count and calorie expenditure are significantly impacted during exam periods compared to regular days. By analyzing this data, we hope to gain insights into how exams influence my physical mobility and identify ways to better balance academics and well-being activities. 
 
+## Expected Output
+A clear and compelling comparison of physical activity and calorie expenditure during exam weeks versus regular days. Statistics to validate the hypothesis that physical activity decreases during exam periods. Insightful visualizations that represents the findings effectively and clearly.
+
 ## Null Hypothesis
 Regardless of weather conditions or precipitation, my step count and calorie expenditure significantly decrease during exam periods compared to non-exam periods.
 
@@ -74,8 +77,6 @@ Exploratory Data Analysis (EDA) will be conducted to identify patterns and trend
 ### Visualization:
 Time-series plots, bar charts, and comparative visuals will be used to outline differences and draw comprehensive conclusions.
 
-## Expected Output
-A clear and compelling comparison of physical activity and calorie expenditure during exam weeks versus regular days. Statistics to validate the hypothesis that physical activity decreases during exam periods. Insightful visualizations that represents the findings effectively and clearly.
 
 ## Data Allocation
 Steps and Calories: Daily step count and calorie data sourced from the Health application on my personal iPhone.
