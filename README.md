@@ -78,10 +78,15 @@ It is time to analyze the data by categorizing it into exam periods and non-exam
 However, this approach is somewhat confusing for interpretation.
 
 Subsequently I convert data to boxplotting and violin plotting, as I believed these methods would better highlight the differences. Using these two methods, the variations in step counts between exam periods and non-exam periods become much more accurated and differentiable.
-##
+
+## Box-Plotting
 ![image](https://github.com/user-attachments/assets/7561ade2-3867-49cc-a4e4-6a009c23e20f)
 ##
-The clear differences observed in the box plot make me feel closer to validating my hypothesis. During non-exam periods, the scale of step counts is noticeably higher, and the average is significantly elevated compared to exam periods.
+## Violin-Plotting
+![image](https://github.com/user-attachments/assets/c9af29cf-116e-46f6-9c28-d587c0670d89)
+##
+
+The clear differences observed especially in the box plot make me feel closer to validating my hypothesis. During non-exam periods, the scale of step counts is noticeably higher, and the average is significantly elevated compared to exam periods.
 
 I augmented the dataset with weather data to control for external factors might be caused by weather. Using an API, I extracted and processed data for the Istanbul region, including average temperature and precipitation levels, to establish a correlation with the non-exam period. 
 ##
