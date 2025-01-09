@@ -31,7 +31,16 @@ Data provided by Apple is an export zip file including xml files of data. First,
 ##
 ![image](https://github.com/user-attachments/assets/0a4bf051-5ecb-44aa-b607-ef1b16936443)
 ##
-When examining the distribution of step counts,I observed a left-shifted, right-tailed skewness resembling a normal distribution. To remove outliers from the data, I used boxplotting to identify outliers in the daily step count data. I replaced the outliers with the nearest boundaries within the dataset. Then, I performed boxplotting again to obtain the cleaned version of the data, free from outliers.
+![image](https://github.com/user-attachments/assets/d4338a1b-591d-4382-bd4a-ec5e9e436c0f)
+##
+
+When examining the distribution of step counts,I observed a left-shifted, right-tailed skewness resembling a normal distribution. To remove outliers from the data, I used boxplotting to identify outliers in the daily step count data. 
+
+##
+
+##
+
+I replaced the outliers with the nearest boundaries within the dataset. Then, I performed boxplotting again to obtain the cleaned version of the data, free from outliers.
 ##
 ![image](https://github.com/user-attachments/assets/1853e09c-207e-421b-b38c-718974c73212)
 ##                    
